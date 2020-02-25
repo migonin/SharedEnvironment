@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Settings View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="SettingsViewController" customModule="Settings" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="f6a-EG-rof">
+                                <rect key="frame" x="20" y="375.5" width="374" height="145"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="uj4-Lw-3K8">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="API endpoint" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FHD-2G-Scg">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="WFt-4P-OqO"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="http://test.api.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sdk-K6-cah">
+                                                <rect key="frame" x="130" y="0.0" width="244" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="enpointTextFieldValueChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="2B0-MR-rri"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="g9o-ms-Utf">
+                                        <rect key="frame" x="0.0" y="57" width="374" height="31"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some feature" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9gX-J2-lmA">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="31"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="tIe-YK-UB8"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="u3E-50-0Zi">
+                                                <rect key="frame" x="130" y="0.0" width="246" height="31"/>
+                                                <connections>
+                                                    <action selector="featureSwitchValueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="X7G-bi-EX6"/>
+                                                </connections>
+                                            </switch>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mrt-u9-TOv">
+                                        <rect key="frame" x="0.0" y="111" width="374" height="34"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Some value" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sBO-qr-4WQ">
+                                                <rect key="frame" x="0.0" y="0.0" width="120" height="34"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="120" id="1uq-Nx-jdi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="100500" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="yPk-Qj-fhF">
+                                                <rect key="frame" x="130" y="0.0" width="244" height="34"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                                <connections>
+                                                    <action selector="valueTextFieldValueChanged:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="OuL-zT-vJy"/>
+                                                </connections>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Del-oX-L3t">
+                                <rect key="frame" x="0.0" y="802" width="414" height="60"/>
+                                <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="sQ0-HK-F8V"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Активировать">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="activateButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dVv-Xj-zsS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Del-oX-L3t" secondAttribute="bottom" id="2IG-eR-dJq"/>
+                            <constraint firstItem="Del-oX-L3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="NU5-f8-8LQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="f6a-EG-rof" secondAttribute="trailing" constant="20" id="QDt-Op-qju"/>
+                            <constraint firstItem="f6a-EG-rof" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="XA3-ha-IGK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Del-oX-L3t" secondAttribute="trailing" id="hxE-dJ-Mnm"/>
+                            <constraint firstItem="f6a-EG-rof" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="rX6-8D-R9M"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activateButton" destination="Del-oX-L3t" id="xpu-kA-fa4"/>
+                        <outlet property="endpointTextField" destination="sdk-K6-cah" id="wCg-GC-C6I"/>
+                        <outlet property="featureSwitch" destination="u3E-50-0Zi" id="ekI-j5-hQD"/>
+                        <outlet property="valueTextField" destination="yPk-Qj-fhF" id="IJK-LC-yRk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="137.94642857142856"/>
+        </scene>
+    </scenes>
+</document>
