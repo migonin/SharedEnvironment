@@ -3,7 +3,7 @@
 Concept of sharing some settings environment for iOS apps.
 
 `Environment` structure contains some settings like API endpoint, API version, feature toggle values and so on:
-```
+```swift
 public struct Environment {
     public let apiEndpoint: String
     public let someFeature: Bool
@@ -12,7 +12,7 @@ public struct Environment {
 ```
 
 It has default (or "production") values:
-```
+```swift
 public enum EnvironmentVariable: String {
     
     case xAPIEndpoint
@@ -46,3 +46,6 @@ However you can override it from xCode environment:
 Or from Settings app, which you can share with your QA team:
 
 <img src="https://github.com/migonin/SharedEnvironment/blob/master/Images/settings.png?raw=true" width="50%">
+
+
+So you inject test settings into your app safely without tricks with "shake menu" or risk to forget sensetive debug data somewhere inside your binary.
